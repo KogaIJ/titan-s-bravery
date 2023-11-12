@@ -1,6 +1,6 @@
 const repoOwner = 'KogaIJ';
 const repoName = 'titan-s-bravery';
-const folderPath = 'path/';
+const folderPath = '/items';
 
 fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPath}`)
   .then(response => response.json())
