@@ -11,6 +11,7 @@ fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${folderPa
     const randomItem = items[randomIndex];
 
     document.getElementById('randomItem').textContent = randomItem;
+    document.getElementById('randomImage').src = folderPath + '/' + randomItem;
   })
   .catch(error => {
     console.error('Failed to fetch icons:', error);
